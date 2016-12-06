@@ -35,4 +35,6 @@ This is use the spark machine library to run SVM algorithm
 
  [git hub markdown reference link](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
+[repository setting remote](http://kbroman.org/github_tutorial/pages/init.html)
+[repository first time](http://kbroman.org/github_tutorial/pages/first_time.html)
 
