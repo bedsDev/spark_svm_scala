@@ -1,0 +1,37 @@
+[0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
+[0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.12:component from component compiler for Scala 2.11.8[0m
+[0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
+[0m[[0minfo[0m] [0m'compiler-interface' not yet compiled for Scala 2.11.8. Compiling...[0m
+[0m[[0mdebug[0m] [0mPlain interface to Scala compiler 2.11.8  with arguments: [0m
+[0m[[0mdebug[0m] [0m	-nowarn[0m
+[0m[[0mdebug[0m] [0m	-d[0m
+[0m[[0mdebug[0m] [0m	C:\Users\dennis\AppData\Local\Temp\sbt_16af5904[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	D:\Programmes\java\jdk1.8.0_74\jre\lib\resources.jar;D:\Programmes\java\jdk1.8.0_74\jre\lib\rt.jar;D:\Programmes\java\jdk1.8.0_74\jre\lib\sunrsasign.jar;D:\Programmes\java\jdk1.8.0_74\jre\lib\jsse.jar;D:\Programmes\java\jdk1.8.0_74\jre\lib\jce.jar;D:\Programmes\java\jdk1.8.0_74\jre\lib\charsets.jar;D:\Programmes\java\jdk1.8.0_74\jre\lib\jfr.jar;D:\Programmes\java\jdk1.8.0_74\jre\classes;C:\Users\dennis\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.8.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	C:\Users\dennis\.sbt\boot\scala-2.10.6\org.scala-sbt\sbt\0.13.12\xsbti\interface-0.13.12.jar;C:\Users\dennis\AppData\Local\Temp\sbt_3352bd4f\srcs\org.scala-sbt\compiler-interface\compiler-interface-0.13.12-sources.jar;C:\Users\dennis\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.11.8.jar;C:\Users\dennis\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.8.jar;C:\Users\dennis\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.4.jar;C:\Users\dennis\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;C:\Users\dennis\.ivy2\cache\jline\jline\jars\jline-2.12.1.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\dennis\AppData\Local\Temp\sbt_8153288e\xsbt\API.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\dennis\AppData\Local\Temp\sbt_8153288e\xsbt\Analyzer.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\dennis\AppData\Local\Temp\sbt_8153288e\xsbt\Command.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\dennis\AppData\Local\Temp\sbt_8153288e\xsbt\Compat.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\dennis\AppData\Local\Temp\sbt_8153288e\xsbt\CompilerInterface.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\dennis\AppData\Local\Temp\sbt_8153288e\xsbt\ConsoleInterface.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\dennis\AppData\Local\Temp\sbt_8153288e\xsbt\DelegatingReporter.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\dennis\AppData\Local\Temp\sbt_8153288e\xsbt\Dependency.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\dennis\AppData\Local\Temp\sbt_8153288e\xsbt\ExtractAPI.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\dennis\AppData\Local\Temp\sbt_8153288e\xsbt\ExtractUsedNames.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\dennis\AppData\Local\Temp\sbt_8153288e\xsbt\GlobalHelpers.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\dennis\AppData\Local\Temp\sbt_8153288e\xsbt\LocateClassFile.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\dennis\AppData\Local\Temp\sbt_8153288e\xsbt\Log.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\dennis\AppData\Local\Temp\sbt_8153288e\xsbt\Message.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\dennis\AppData\Local\Temp\sbt_8153288e\xsbt\ScaladocInterface.scala[0m
+[0m[[0minfo[0m] [0m  Compilation completed in 10.491 s[0m
+[0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.12:component from component compiler for Scala 2.11.8[0m
+[0m[[0minfo[0m] [0mStarting scala interpreter...[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0mdebug[0m] [0m	Thread run-main-0 exited.[0m
+[0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m
+[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-1-worker-13[0m
+[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-1-worker-13[0m
+[0m[[0mdebug[0m] [0mSandboxed run complete..[0m
+[0m[[0mdebug[0m] [0mExited with code 0[0m

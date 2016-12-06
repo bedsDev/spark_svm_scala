@@ -1,0 +1,15 @@
+[0m[[0minfo[0m] [0mPackaging E:\workspaces\scala\svm_ex\target\scala-2.11\svm_2.11-1.0.jar ...[0m
+[0m[[0mdebug[0m] [0mInput file mappings:[0m
+[0m[[0mdebug[0m] [0m	org\ccgv[0m
+[0m[[0mdebug[0m] [0m	  E:\workspaces\scala\svm_ex\target\scala-2.11\classes\org\ccgv[0m
+[0m[[0mdebug[0m] [0m	org\ccgv\nlp\SVMExample.class[0m
+[0m[[0mdebug[0m] [0m	  E:\workspaces\scala\svm_ex\target\scala-2.11\classes\org\ccgv\nlp\SVMExample.class[0m
+[0m[[0mdebug[0m] [0m	org\ccgv\nlp[0m
+[0m[[0mdebug[0m] [0m	  E:\workspaces\scala\svm_ex\target\scala-2.11\classes\org\ccgv\nlp[0m
+[0m[[0mdebug[0m] [0m	org\ccgv\nlp\SVMExample$.class[0m
+[0m[[0mdebug[0m] [0m	  E:\workspaces\scala\svm_ex\target\scala-2.11\classes\org\ccgv\nlp\SVMExample$.class[0m
+[0m[[0mdebug[0m] [0m	org[0m
+[0m[[0mdebug[0m] [0m	  E:\workspaces\scala\svm_ex\target\scala-2.11\classes\org[0m
+[0m[[0mdebug[0m] [0m	org\ccgv\nlp\SVMExample$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	  E:\workspaces\scala\svm_ex\target\scala-2.11\classes\org\ccgv\nlp\SVMExample$$anonfun$1.class[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m
