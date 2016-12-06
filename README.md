@@ -30,11 +30,11 @@ This is use the spark machine library to run SVM algorithm
    \softwares\spark-2.0.0-bin-hadoop2.7\bin\spark-submit --class org.ccgv.nlp.SVMExample --master local[4] target\scala-2.11\svm_2.11-1.0.jar
 
  ```
-## this suppose the spark is downloaded and put into folder: \softwares\spark-2.0.0-bin-hadoop2.7
+## This supposes the spark is downloaded and put into folder: \softwares\spark-2.0.0-bin-hadoop2.7
 
 
  [git hub markdown reference link](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-
+## Links:
 [repository setting remote](http://kbroman.org/github_tutorial/pages/init.html)
 [repository first time](http://kbroman.org/github_tutorial/pages/first_time.html)
 
