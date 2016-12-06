@@ -1,4 +1,1 @@
 /target/
-
-// https://mvnrepository.com/artifact/org.apache.spark/spark-core_2.10
-// libraryDependencies += "org.apache.spark" %% "spark-core" % "2.0.2"
