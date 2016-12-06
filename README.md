@@ -41,3 +41,12 @@ This is use the spark machine library to run SVM algorithm
 
  1. [repository first time](http://kbroman.org/github_tutorial/pages/first_time.html)
 
+
+ ## issuse: target was not ignored because .gitignore was added after the initial, so that commands below used to solve the problems.
+
+ ```bash
+ 	git rm -rf --cached .
+ 	git add .
+ ```
+
+
