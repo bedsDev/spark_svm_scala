@@ -49,4 +49,9 @@ This is use the spark machine library to run SVM algorithm
  	git add .
  ```
 
+## winutils.exe errors for the 
 
+	1. download package from [hadoopn windows](https://codeload.github.com/sardetushar/hadooponwindows/zip/master)
+	1. extract the file to put folder E:\softwares\spark-2.0.0-bin-hadoop2.7\hadooponwindows-master
+	1. add above path to env as HADOOP_HOME
+	1. append %HADOOP_HOME% to %PATH%
