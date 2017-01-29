@@ -4,9 +4,16 @@ version := "1.0"
 
 scalaVersion := "2.11.8"
 
-// unmanagedBase := file("../../../softwares/spark-2.0.0-bin-hadoop2.7/jars")
+
+/**
+ to use unamagedBase to direct the dependency libary in a certain location,
+ so that the compilation does not need to download the library online. 
+ */
+
+/**this is local laptop dependency libary path */
+unmanagedBase := file("../../../softwares/spark-2.0.0-bin-hadoop2.7/jars")
 // unmanagedBase := file("/workspaces/spark-2.0.2-bin-hadoop2.7")
-unmanagedBase := file("../../../softwares/spark-2.0.2-bin-hadoop2.7/jars")
+// unmanagedBase := file("../../../softwares/spark-2.0.2-bin-hadoop2.7/jars")
 
 // https://mvnrepository.com/artifact/org.apache.spark/spark-core_2.10
 //libraryDependencies += "org.apache.spark" %% "spark-core" % "2.0.2"
