@@ -10,6 +10,7 @@ import org.apache.spark.SparkConf
 // import org.apache.spark.mllib.util.MLUtils
 import org.apache.spark.mllib.fpm.FPGrowth
 import org.apache.spark.rdd.RDD
+import java.io.{PrintWriter,File}
 
 object ParallelFP{
 	def main(args: Array[String]) { 
@@ -25,16 +26,27 @@ object ParallelFP{
 		  .setNumPartitions(10)
 		val model = fpg.run(transactions)
 
+
+		val writer = new PrintWriter(new File("patternOutput.txt" ))		
+
+		var patternStr : String = ""
+
 		model.freqItemsets.collect().foreach { itemset =>
-		  println(itemset.items.mkString("[", ",", "]") + ", " + itemset.freq)
+			{
+				patternStr = (itemset.items.mkString("[", ",", "]") + ", " + itemset.freq)
+				writer.write(patternStr +"\n")
+		  		println(patternStr)
+			}
 		}
 
-		val minConfidence = 0.8
-		model.generateAssociationRules(minConfidence).collect().foreach { rule =>
-		  println(
-		    rule.antecedent.mkString("[", ",", "]")
-		      + " => " + rule.consequent .mkString("[", ",", "]")
-		      + ", " + rule.confidence)
-		}
+		writer.close
+
+		// val minConfidence = 0.8
+		// model.generateAssociationRules(minConfidence).collect().foreach { rule =>
+		//   println(
+		//     rule.antecedent.mkString("[", ",", "]")
+		//       + " => " + rule.consequent .mkString("[", ",", "]")
+		//       + ", " + rule.confidence)
+		// }
 	}
 }
