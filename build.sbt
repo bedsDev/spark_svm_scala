@@ -11,9 +11,11 @@ scalaVersion := "2.11.8"
  */
 
 /**this is local laptop dependency libary path */
-unmanagedBase := file("../../../softwares/spark-2.0.0-bin-hadoop2.7/jars")
+// unmanagedBase := file("../../../softwares/spark-2.0.0-bin-hadoop2.7/jars")
 // unmanagedBase := file("/workspaces/spark-2.0.2-bin-hadoop2.7")
-// unmanagedBase := file("../../../softwares/spark-2.0.2-bin-hadoop2.7/jars")
+
+/* spark downloaded position in University computer*/
+unmanagedBase := file("../../../software/spark-2.1.0-bin-hadoop2.7/jars")
 
 // https://mvnrepository.com/artifact/org.apache.spark/spark-core_2.10
 //libraryDependencies += "org.apache.spark" %% "spark-core" % "2.0.2"
