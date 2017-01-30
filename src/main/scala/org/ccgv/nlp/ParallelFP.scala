@@ -35,7 +35,7 @@ object ParallelFP{
 
 
 
-		val fpg = new FPGrowth().setMinSupport(0.0006).setNumPartitions(10)
+		val fpg = new FPGrowth().setMinSupport(0.0002).setNumPartitions(10)
 		val model = fpg.run(transactions)
 
 
