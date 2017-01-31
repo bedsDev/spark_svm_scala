@@ -18,13 +18,18 @@ object ParallelFP{
 	    val sc = new SparkContext(conf)
 
 	    /* the decomposition for the term frequencies of the documents */
-	    val inputFilename:String = "termFrequenceDecomposition.csv"
-	    // val inputFilename:String = "../topic_retrieval/notebooks/results/termFrequenceDecomposition.csv"
-	    val outputFilename:String = "outputs/patternOutputTermDecompose.txt"
+	    // val inputFilename:String = "termFrequenceDecomposition.csv"
+	    // // val inputFilename:String = "../topic_retrieval/notebooks/results/termFrequenceDecomposition.csv"
+	    // val outputFilename:String = "outputs/patternOutputTermDecompose.txt"
 
 	    /* the decomposition for the term frequencies of the documents */
 	    // val inputFilename:String = "../topic_retrieval/notebooks/results/customFrequenceDecomposition.csv"
 	    // val outputFilename:String = "outputs/patternOutputCustomTermDecompose.txt"
+
+
+	     /* the decomposition for the term frequencies of the documents top_100*/
+	    val inputFilename:String = "termFrequenceDecomposition100.csv"
+	    val outputFilename:String = "outputs/patternOutputTop100.txt"
 
 	    /* Examples */
 	    // val inputFilename:String= "sample_fpgrowth.txt"
@@ -35,7 +40,7 @@ object ParallelFP{
 
 
 
-		val fpg = new FPGrowth().setMinSupport(0.0002).setNumPartitions(10)
+		val fpg = new FPGrowth().setMinSupport(0.0001).setNumPartitions(100)
 		val model = fpg.run(transactions)
 
 
