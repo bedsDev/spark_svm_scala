@@ -32,13 +32,15 @@ This is use the spark machine library to run SVM algorithm
 
  ```
 
- # Command lines to build and sumbit spark packages ++ to increase the memory of driver for Parallel Frequent Pattern Growth
+# Command lines to build and sumbit spark packages ++ to increase the memory of driver for Parallel Frequent Pattern Growth
 
 ```bash
    > sbt package
 
    > \softwares\spark-2.1.0-bin-hadoop2.7\bin\spark-submit --driver-memory 4g --class org.ccgv.nlp.ParallelFP --master local[*] target\scala-2.11\svm_2.11-1.0.jar
 
+   #local[*] to as many as possible threads
+   #for the local mode, there is only one driver and one executer. So that to set driver to 4g
  ```
 ## This supposes the spark is downloaded and put into folder: \softwares\spark-2.0.0-bin-hadoop2.7
 
