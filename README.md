@@ -59,6 +59,8 @@ This is use the spark machine library to run SVM algorithm
 
  1. [How to set Apache Spark Executor memory 2](http://apache-spark-user-list.1001560.n3.nabble.com/Setting-spark-executor-memory-problem-td11429.html)
 
+ 1. [Cluster of Spark](CLUSTER.md)
+
  ## issuse: target was not ignored because .gitignore was added after the initial, so that commands below used to solve the problems.
 
  ```bash
