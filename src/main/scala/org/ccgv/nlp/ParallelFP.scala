@@ -14,7 +14,9 @@ import java.io.{PrintWriter,File}
 
 object ParallelFP{
 	def main(args: Array[String]) { 
-		val conf = new SparkConf().setAppName("Parallel Frequent Pattern")
+		val conf = new SparkConf()
+			.setAppName("Parallel Frequent Pattern")
+			.set("spark.executor.memory","2g")
 	    val sc = new SparkContext(conf)
 
 	    /* the decomposition for the term frequencies of the documents */
@@ -28,8 +30,8 @@ object ParallelFP{
 
 
 	     /* the decomposition for the term frequencies of the documents top_100*/
-	    val inputFilename:String = "termFrequenceDecomposition100.csv"
-	    val outputFilename:String = "outputs/patternOutputTop100.txt"
+	    val inputFilename:String = "termFrequenceDecomposition1000.csv"
+	    val outputFilename:String = "outputs/patternOutputTop1000.txt"
 
 	    /* Examples */
 	    // val inputFilename:String= "sample_fpgrowth.txt"
@@ -57,7 +59,10 @@ object ParallelFP{
 		}
 
 		writer.close
+		println("\n\n\n")
+		println("------------------------------------------------")
 		println("have written file: " + outputFilename + " ")
+		println("++++++++++++++++++++++++++++++++++++++++++++++++")
 		// val minConfidence = 0.8
 		// model.generateAssociationRules(minConfidence).collect().foreach { rule =>
 		//   println(
