@@ -28,8 +28,8 @@ object ParallelFP{
 
 
 	     /* the decomposition for the term frequencies of the documents top_100*/
-	    val inputFilename:String = "termFrequenceDecomposition100.csv"
-	    val outputFilename:String = "outputs/patternOutputTop100.txt"
+	    val inputFilename:String = "termFrequenceDecomposition1000.csv"
+	    val outputFilename:String = "outputs/patternOutputTop1000.txt"
 
 	    /* Examples */
 	    // val inputFilename:String= "sample_fpgrowth.txt"
@@ -40,7 +40,7 @@ object ParallelFP{
 
 
 
-		val fpg = new FPGrowth().setMinSupport(0.0001).setNumPartitions(100)
+		val fpg = new FPGrowth().setMinSupport(0.0004).setNumPartitions(100)
 		val model = fpg.run(transactions)
 
 
