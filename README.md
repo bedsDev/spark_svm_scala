@@ -26,8 +26,18 @@ This is use the spark machine library to run SVM algorithm
 # Command lines to build and sumbit spark packages
 
 ```bash
-   sbt package
-   \softwares\spark-2.0.0-bin-hadoop2.7\bin\spark-submit --class org.ccgv.nlp.SVMExample --master local[4] target\scala-2.11\svm_2.11-1.0.jar
+   > sbt package
+
+   > \softwares\spark-2.0.0-bin-hadoop2.7\bin\spark-submit --class org.ccgv.nlp.SVMExample --master local[4] target\scala-2.11\svm_2.11-1.0.jar
+
+ ```
+
+ # Command lines to build and sumbit spark packages ++ to increase the memory of driver for Parallel Frequent Pattern Growth
+
+```bash
+   > sbt package
+
+   > \softwares\spark-2.1.0-bin-hadoop2.7\bin\spark-submit --driver-memory 4g --class org.ccgv.nlp.ParallelFP --master local[*] target\scala-2.11\svm_2.11-1.0.jar
 
  ```
 ## This supposes the spark is downloaded and put into folder: \softwares\spark-2.0.0-bin-hadoop2.7
@@ -41,6 +51,11 @@ This is use the spark machine library to run SVM algorithm
 
  1. [repository first time](http://kbroman.org/github_tutorial/pages/first_time.html)
 
+ 1. [Frequent Pattern Mining - RDD-based API](http://spark.apache.org/docs/latest/mllib-frequent-pattern-mining.html)
+
+ 1. [How to set Apache Spark Executor memory 1](http://stackoverflow.com/questions/26562033/how-to-set-apache-spark-executor-memory)
+
+ 1. [How to set Apache Spark Executor memory 2](http://apache-spark-user-list.1001560.n3.nabble.com/Setting-spark-executor-memory-problem-td11429.html)
 
  ## issuse: target was not ignored because .gitignore was added after the initial, so that commands below used to solve the problems.
 

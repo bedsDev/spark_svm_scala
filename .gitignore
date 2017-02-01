@@ -2,3 +2,4 @@
 /project/target/
 /outputs/
 /metastore_db/
+derby.log

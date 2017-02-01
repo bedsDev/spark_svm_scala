@@ -14,13 +14,15 @@ import java.io.{PrintWriter,File}
 
 object ParallelFP{
 	def main(args: Array[String]) { 
-		val conf = new SparkConf().setAppName("Parallel Frequent Pattern")
+		val conf = new SparkConf()
+			.setAppName("Parallel Frequent Pattern")
+			// .set("spark.executor.memory","2g")
 	    val sc = new SparkContext(conf)
 
 	    /* the decomposition for the term frequencies of the documents */
-	    // val inputFilename:String = "termFrequenceDecomposition.csv"
+	    val inputFilename:String = "termFrequenceDecomposition.csv"
 	    // // val inputFilename:String = "../topic_retrieval/notebooks/results/termFrequenceDecomposition.csv"
-	    // val outputFilename:String = "outputs/patternOutputTermDecompose.txt"
+	    val outputFilename:String = "outputs/patternOutputTermDecompose.txt"
 
 	    /* the decomposition for the term frequencies of the documents */
 	    // val inputFilename:String = "../topic_retrieval/notebooks/results/customFrequenceDecomposition.csv"
@@ -28,8 +30,17 @@ object ParallelFP{
 
 
 	     /* the decomposition for the term frequencies of the documents top_100*/
-	    val inputFilename:String = "termFrequenceDecomposition1000.csv"
-	    val outputFilename:String = "outputs/patternOutputTop1000.txt"
+
+	    // val inputFilename:String = "termFrequenceDecomposition1000.csv"
+	    // val outputFilename:String = "outputs/patternOutputTop1000.txt"
+
+	    // val inputFilename:String = "termFrequenceDecomposition1000.csv"
+	    // val outputFilename:String = "outputs/patternOutputTop1000.txt"
+
+	    /* the decomposition for the term frequencies of the documents */
+	    // val inputFilename:String = "../topic_retrieval/notebooks/results/customFrequenceDecomposition.csv"
+	    // val outputFilename:String = "outputs/customTermPattern.txt"
+
 
 	    /* Examples */
 	    // val inputFilename:String= "sample_fpgrowth.txt"
@@ -40,7 +51,9 @@ object ParallelFP{
 
 
 
+
 		val fpg = new FPGrowth().setMinSupport(0.0004).setNumPartitions(100)
+
 		val model = fpg.run(transactions)
 
 
@@ -57,7 +70,10 @@ object ParallelFP{
 		}
 
 		writer.close
+		println("\n\n\n")
+		println("------------------------------------------------")
 		println("have written file: " + outputFilename + " ")
+		println("++++++++++++++++++++++++++++++++++++++++++++++++")
 		// val minConfidence = 0.8
 		// model.generateAssociationRules(minConfidence).collect().foreach { rule =>
 		//   println(
