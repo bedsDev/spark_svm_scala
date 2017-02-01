@@ -14,9 +14,27 @@ import java.io.{PrintWriter,File}
 
 object ParallelFP{
 	def main(args: Array[String]) { 
+
+		var supportNum = .0008
+		if(args.size > 0){
+				println("arguments[0] = " + args(0))
+				try{
+					supportNum = args(0).toDouble
+				}
+				catch{
+					case e:Exception =>{
+						println(e)
+						supportNum = .0008
+					}
+				}
+				
+			}
+			
+		println(supportNum)
+
 		val conf = new SparkConf()
 			.setAppName("Parallel Frequent Pattern")
-			// .set("spark.executor.memory","2g")
+			.set("spark.driver.memory","6g")
 	    val sc = new SparkContext(conf)
 
 	    /* the decomposition for the term frequencies of the documents */
@@ -45,6 +63,7 @@ object ParallelFP{
 	    /* Examples */
 	    // val inputFilename:String= "sample_fpgrowth.txt"
 	    // val outputFilename:String = "patternOutput.txt"
+	    
 	    val data = sc.textFile(inputFilename)
 
 		val transactions: RDD[Array[String]] = data.map(s => s.trim.split(','))
@@ -52,7 +71,7 @@ object ParallelFP{
 
 
 
-		val fpg = new FPGrowth().setMinSupport(0.0004).setNumPartitions(100)
+		val fpg = new FPGrowth().setMinSupport(supportNum).setNumPartitions(100)
 
 		val model = fpg.run(transactions)
 
@@ -74,6 +93,8 @@ object ParallelFP{
 		println("------------------------------------------------")
 		println("have written file: " + outputFilename + " ")
 		println("++++++++++++++++++++++++++++++++++++++++++++++++")
+
+
 		// val minConfidence = 0.8
 		// model.generateAssociationRules(minConfidence).collect().foreach { rule =>
 		//   println(
@@ -83,5 +104,7 @@ object ParallelFP{
 		// }
 
 		sc.stop()
+
+		println("support number is: " + supportNum)
 	}
 }
