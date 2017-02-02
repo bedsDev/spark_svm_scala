@@ -33,8 +33,8 @@ object ParallelFP{
 		println(supportNum)
 
 		val conf = new SparkConf()
+			.set("spark.driver.memory","20g")
 			.setAppName("Parallel Frequent Pattern")
-			.set("spark.driver.memory","6g")
 	    val sc = new SparkContext(conf)
 
 	    /* the decomposition for the term frequencies of the documents */
