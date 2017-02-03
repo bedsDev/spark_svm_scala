@@ -23,3 +23,8 @@ unmanagedBase := file("../../../software/spark-2.1.0-bin-hadoop2.7/jars")
 // https://mvnrepository.com/artifact/org.apache.spark/spark-mllib_2.11
 //libraryDependencies += "org.apache.spark" %% "spark-mllib" % "2.0.2"
 
+val latestVersion = "3.5.0"
+
+val json4sJackson = "org.json4s" %% "json4s-jackson" % "3.5.0"
+
+// libraryDependencies += json4sJackson

@@ -1,4 +1,3 @@
-
 package org.ccgv.nlp
 
 import org.apache.spark.SparkContext
@@ -17,6 +16,13 @@ import java.io.BufferedInputStream
 import java.util.zip.GZIPInputStream
 import java.io.FileInputStream
 
+
+import org.json4s._
+// import org.json4s.native.JsonMethods._
+import org.json4s.jackson.JsonMethods._
+
+import org.apache.commons.io.IOUtils;
+
 object FullTextData{
 	def main(args: Array[String]) { 
 
@@ -28,8 +34,26 @@ object FullTextData{
 		println("FullTextData Class")
 		val inputFnm:String = "data/drinventordata.json.gz"
 		val drData = gis(inputFnm)
+		val jsonString = IOUtils.toString(drData)
+		// println(jsonString.substring(0,100))
 
-		println(drData)
+		val json = parse(jsonString)
+		// println(json)
+		// for(jj <-json){
+		// 	println(jj("doi"))
+		// }
+		// json.map(jj => println(jj("doi")))
+		val first = json(0)
+		println(first)
+		// println(first(0))
+		// json.foreach(x => println(x._1))
+		println(json.getClass)
+		val list = json.values.asInstanceOf[List[Map[String,String]]]
+		for(obj <- list){
+			println(obj("doi"))
+			println(obj("year"))
+			println(obj("title"))
+		}
 		sc.stop()
 	}
 
