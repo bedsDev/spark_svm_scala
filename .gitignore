@@ -1,5 +1,6 @@
-/target/
+target
 /project/target/
 /outputs/
 /metastore_db/
 derby.log
+/project/project/
