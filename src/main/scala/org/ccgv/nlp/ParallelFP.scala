@@ -38,9 +38,11 @@ object ParallelFP{
 	    val sc = new SparkContext(conf)
 
 	    /* the decomposition for the term frequencies of the documents */
-	    val inputFilename:String = "termFrequenceDecomposition.csv"
-	    // // val inputFilename:String = "../topic_retrieval/notebooks/results/termFrequenceDecomposition.csv"
-	    val outputFilename:String = "outputs/patternOutputTermDecompose.txt"
+	    // val inputFilename:String = "termFrequenceDecomposition.csv"
+	    // val inputFilename:String = "../topic_retrieval/notebooks/results/termFrequenceDecomposition.csv"
+	    val inputFilename:String = "../topic_retrieval/notebooks/results/customs/custom_all_decomposition.csv"
+
+	    val outputFilename:String = "outputs/custom_all_trans.txt"
 
 	    /* the decomposition for the term frequencies of the documents */
 	    // val inputFilename:String = "../topic_retrieval/notebooks/results/customFrequenceDecomposition.csv"
