@@ -16,7 +16,9 @@ scalaVersion := "2.11.8"
 // unmanagedBase := file("/workspaces/spark-2.0.2-bin-hadoop2.7")
 
 /* spark downloaded position in University computer*/
-unmanagedBase := file("../../../software/spark-2.1.0-bin-hadoop2.7/jars")
+// unmanagedBase := file("../../../software/spark-2.1.0-bin-hadoop2.7/jars")
+
+unmanagedBase := baseDirectory.value / "../../../software/spark-2.1.0-bin-hadoop2.7/jars"
 
 // https://mvnrepository.com/artifact/org.apache.spark/spark-core_2.10
 //libraryDependencies += "org.apache.spark" %% "spark-core" % "2.0.2"
@@ -28,3 +30,5 @@ val latestVersion = "3.5.0"
 val json4sJackson = "org.json4s" %% "json4s-jackson" % "3.5.0"
 
 // libraryDependencies += json4sJackson
+// libraryDependencies += "org.apache.spark" %% "spark-core" % "2.1.0"
+

@@ -40,7 +40,7 @@ object ParallelFP{
 	    /* the decomposition for the term frequencies of the documents */
 	    // val inputFilename:String = "termFrequenceDecomposition.csv"
 	    // val inputFilename:String = "../topic_retrieval/notebooks/results/termFrequenceDecomposition.csv"
-	    val inputFilename:String = "../topic_retrieval/notebooks/results/customs/custom_all_decomposition.csv"
+	    val inputFilename:String = "../topic_retrieval/notebooks/data/customs_token/custom_all_decomposition.csv"
 
 	    val outputFilename:String = "outputs/custom_all_trans.txt"
 
