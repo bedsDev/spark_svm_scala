@@ -67,6 +67,11 @@ This is use the spark machine library to run SVM algorithm
  	git rm -rf --cached .
  	git add .
  ```
+ ## discard local changes
+ ```bash
+ git reset --hard
+ git clean -f -d
+ ```
 
 ## winutils.exe errors for the 
  1. download package from [hadoopn windows](https://codeload.github.com/sardetushar/hadooponwindows/zip/master)
