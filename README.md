@@ -34,7 +34,20 @@ This is use the spark machine library to run SVM algorithm
   
 
  ```
+# to change the remote from github to bitbucket
+
+```bash
+# to rm the old remote url
+ git remote remove origin
+ # to add the new repository remote url 
+ git remote add origin https://nets_beds@bitbucket.org/nets_beds/ref_process.git
+ # to check the remote url
+ git remote -v
+ # setting the push
+ git push -u origin master
  
+
+```
 
 # Command lines to build and sumbit spark packages
 
