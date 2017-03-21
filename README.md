@@ -18,7 +18,20 @@ This is use the spark machine library to run SVM algorithm
     git commit -m "update remote repository"
 
     git push -u origin master
-
+  ##########################################
+  #   procedure to abandon the local commits
+  rm -rf .git
+  git add .
+  git remote add origin <remote-url>
+  git config --global user.email "shaopeng.wu@beds.ac.uk"
+  git config --global user.name "shaopeng wu"
+  # resolve the confliction of merge
+  git pull <remote-url> master
+  # re-invoke the commit
+  git add .
+  git commit -m "commit msg"
+  git push -u origin master
+  
 
  ```
  
